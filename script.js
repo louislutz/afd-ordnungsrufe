@@ -1,10 +1,11 @@
-// Hier kannst du später die API oder eine andere Methode zum Abrufen der Ordnungsrufe einfügen
-function updateOrdnungRufe() {
-    const ordnungsrufeZahl = document.getElementById('ordnungsrufe-zahl');
-    
-    // Beispiel: Setze hier den Wert direkt oder hole die Daten von einer API
-    ordnungsrufeZahl.innerText = '42';  // Platzhalter, um die Anzeige zu testen
+// Funktion zum manuellen Festlegen der Ordnungsrufe
+function setOrdnungsrufe() {
+    // Hier trägst du die aktuelle Zahl der Ordnungsrufe ein
+    const ordnungsrufe = 42; // Beispielwert, den du manuell anpasst
+
+    // Setze die Zahl in das HTML-Element
+    document.getElementById('ordnungsrufe-zahl').innerText = ordnungsrufe;
 }
 
-// Alle 10 Sekunden die Zahl aktualisieren (kannst du nach Bedarf anpassen)
-setInterval(updateOrdnungRufe, 10000);
+// Beim Laden der Seite die Zahl anzeigen
+window.onload = setOrdnungsrufe;
