@@ -1,26 +1,79 @@
-#ordnungsrufe-zahl {
-    font-size: 2em;
-    font-weight: bold;
-    color: #d9534f; /* Beispiel für eine auffällige Farbe */
-    margin-top: 10px;
-    padding: 10px;
+/* Basis-Stile für den Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://source.unsplash.com/1600x900/?nature,sky') no-repeat center center fixed; 
+    background-size: cover;  /* Hintergrundbild, das den gesamten Bildschirm abdeckt */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Die gesamte Höhe des Viewports */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Header-Stile */
+header {
     text-align: center;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
-button {
-    background-color: #5bc0de;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+/* Hauptbereich für den Glass-Container */
+main {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%); /* Zentriert den Bereich horizontal */
+    width: 80%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.2); /* Leicht transparente weiße Hintergrundfarbe */
+    backdrop-filter: blur(10px); /* Frosted Glass Effekt */
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Schatten für den Glass-Effekt */
+    text-align: center;
+    color: #fff;
 }
 
-button:hover {
-    background-color: #31b0d5;
+/* Der Bereich, der die Ordnungsrufe zeigt */
+#ords-count {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+/* H1 und H2 Texte */
+h1, h2 {
+    font-size: 2rem;
+    margin: 0 0 10px;
+    color: #fff;
+}
+
+/* Zahl der Ordnungsrufe */
+#ordnungsrufe-zahl {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FF9800; /* Eine auffällige Farbe für die Zahl */
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6); /* Leicht transparentes Schwarz */
+    z-index: 1;
 }
