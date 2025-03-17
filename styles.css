@@ -1,8 +1,8 @@
 /* Basis-Stile für den Body */
 body {
     font-family: 'Arial', sans-serif;
-    background: url('https://source.unsplash.com/1600x900/?nature,sky') no-repeat center center fixed; 
-    background-size: cover;  /* Hintergrundbild, das den gesamten Bildschirm abdeckt */
+    background: url('https://source.unsplash.com/1600x900/?nature,sky') no-repeat center center fixed;
+    background-size: cover; /* Hintergrundbild, das den gesamten Bildschirm abdeckt */
     margin: 0;
     padding: 0;
     height: 100vh; /* Die gesamte Höhe des Viewports */
@@ -62,7 +62,7 @@ h1, h2 {
 #ordnungsrufe-zahl {
     font-size: 3rem;
     font-weight: bold;
-    color: #FF9800; }
+    color: #FF9800;
 }
 
 /* Footer */
